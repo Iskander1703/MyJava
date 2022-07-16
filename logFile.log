@@ -1,0 +1,6 @@
+2022-07-13 08:26:41 WARN  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 does not exists
+2022-07-13 08:26:41 INFO  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 was added
+2022-07-13 08:26:41 WARN  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 already exists
+2022-07-13 08:26:41 WARN  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 already exists
+2022-07-13 08:26:41 WARN  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 already exists
+2022-07-13 08:26:41 INFO  [main]: Car model: Mitsubishi Outlander, color: black, year of issue: 2020,  horsepower: 232 was deleted
