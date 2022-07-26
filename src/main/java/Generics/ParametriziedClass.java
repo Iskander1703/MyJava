@@ -1,5 +1,9 @@
 package Generics;
 
+import com.sun.jdi.IntegerValue;
+
+import java.util.Comparator;
+
 public class ParametriziedClass {
     public static void main(String[] args) {
         Info<String> info1=new Info<>(new String("Спартак!"));
@@ -13,7 +17,7 @@ public class ParametriziedClass {
 
 }
 
-class  Info <T>{
+class  Info <T extends Comparable> implements  Comparable{
     private T value;
     public Info(T value){
         this.value=value;
@@ -28,5 +32,10 @@ class  Info <T>{
 
     public T getValue() {
         return value;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }

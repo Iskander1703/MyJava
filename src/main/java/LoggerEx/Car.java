@@ -1,5 +1,7 @@
 package LoggerEx;
 
+import java.util.Objects;
+
 public class Car {
     private String title;
     private int yearOfIssue;
@@ -27,5 +29,18 @@ public class Car {
 
     public String getColor() {
         return color;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Car)) return false;
+        Car car = (Car) o;
+        return getYearOfIssue() == car.getYearOfIssue() && getEngineHorse() == car.getEngineHorse() && Objects.equals(getTitle(), car.getTitle()) && Objects.equals(getColor(), car.getColor());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getTitle(), getYearOfIssue(), getEngineHorse(), getColor());
     }
 }
