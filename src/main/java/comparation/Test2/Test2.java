@@ -51,6 +51,7 @@ public class Test2 {
         for (Employee a: employeeArrayList){
             System.out.println(a.toString());
         }
+
         Collections.sort(employeeArrayList, new Comparator<Employee>() {
             @Override
             public int compare(Employee employee, Employee t1) {
